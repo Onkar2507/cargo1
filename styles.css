@@ -1,0 +1,156 @@
+/* Importing the Previous Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* 🌙 Soft Background (Behind Dashboard Box) */
+body {
+    background: #121212; /* Soft black */
+    color: white;
+    padding-top: 20px;
+}
+
+/* 🖤 **Mild Black Background Behind Dashboard Box** */
+.dashboard-wrapper {
+    background: #1A1A1A; /* Mild black */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* 🚀 Compact & Sleek Dashboard Box */
+.container {
+    max-width: 580px; /* More compact */
+    margin: auto;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 229, 255, 0.3);
+}
+
+/* 🌟 Section Headings */
+h2, h4 {
+    color: #00E5FF;
+    text-align: center;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* 🚀 Futuristic Cards */
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    color: white;
+    border: 1px solid #1F51FF;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 12px rgba(31, 81, 255, 0.4);
+}
+
+/* 📊 Progress Bar */
+.progress {
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 8px;
+    height: 12px;
+    box-shadow: inset 0px 0px 6px rgba(255, 255, 255, 0.2);
+}
+
+.progress-bar {
+    font-weight: bold;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+    background: linear-gradient(90deg, #00E5FF, #1F51FF);
+    border-radius: 8px;
+    box-shadow: 0px 0px 6px rgba(0, 229, 255, 0.8);
+}
+
+/* 🔘 Buttons - Small & Sleek */
+.btn {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #00E5FF, #1F51FF);
+    border: none;
+    box-shadow: 0px 0px 8px rgba(0, 229, 255, 0.6);
+    color: #121212;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(45deg, #1F51FF, #00E5FF);
+    box-shadow: 0px 0px 10px rgba(0, 229, 255, 0.9);
+    transform: scale(1.05);
+}
+
+/* 📋 List Group */
+.list-group-item {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(6px);
+    color: white;
+    border: 1px solid #444;
+}
+
+/* 🔹 Form Controls */
+.form-control {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid #00E5FF;
+    padding: 8px;
+    border-radius: 6px;
+    box-shadow: inset 0px 0px 6px rgba(255, 255, 255, 0.2);
+}
+
+.form-control::placeholder {
+    color: #AAAAAA;
+}
+
+/* 🚨 Waste Warning */
+.waste-warning {
+    color: #E63946;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 8px;
+    text-shadow: 0px 0px 6px rgba(230, 57, 70, 0.8);
+}
+
+/* 📱 RESPONSIVENESS */
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        max-width: 95%;
+        padding: 12px;
+    }
+}
+
+/* ✨ Animations */
+@keyframes glow {
+    0% { box-shadow: 0px 0px 8px rgba(0, 229, 255, 0.6); }
+    50% { box-shadow: 0px 0px 14px rgba(0, 229, 255, 1); }
+    100% { box-shadow: 0px 0px 8px rgba(0, 229, 255, 0.6); }
+}
+
+.glowing {
+    animation: glow 2s infinite alternate;
+}
